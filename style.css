@@ -1,0 +1,576 @@
+@import url();
+@import url();
+body{
+    margin:0;
+}
+.foot{
+  color: #f8edeb;
+}
+.logo{
+  width: 50px;
+    margin-left: 10px;
+}
+header{
+  background-color: #0d1b2a;
+  margin-bottom: 0;
+  position: relative;
+}
+span{
+  color:#9D8189;
+}
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+    display: none;
+   }
+     /* стилизуем кнопку */
+   .menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 51px;
+    height: 21px;
+    right: 20px;
+    bottom: 0;
+    z-index: 1;
+    color: #f8edeb;
+    flex-direction: row;
+   }
+     /* добавляем "гамбургер" */
+   .menu__btn > span,
+   .menu__btn > span::before,
+   .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color:#f8edeb;
+   }
+   .menu__btn > span::before {
+    content: '';
+    top: -8px;
+   }
+   .menu__btn > span::after {
+    content: '';
+    top: 8px;
+   }
+     /* контейнер меню */
+   .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #1b263b;
+   }
+     /* элементы меню */
+   .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #32e4ff;
+    text-decoration: none;
+    color:#f8edeb;
+   }
+   .menu__item:hover {
+    background-color: #CFD8DC;
+   }
+   #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+   }
+   #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+   }
+   #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+   }
+   #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+}
+
+.banner{
+margin: 0;
+padding: 0px 20px 20px 20px;
+display: flex;
+align-items: flex-end;
+flex-direction: column;
+font-family: 'Miltonian Tattoo';
+font-style: normal;
+text-align: right;
+color: #f8edeb;
+
+background-color: #1b263b;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+.titlebanner{
+margin: 15;
+line-height: 29px;
+height: 66px;
+left: 0px;
+top: 127px;
+margin-right: 300px;
+}
+.p_banner{
+ 
+  left: 0px;
+  top: 127px;
+  margin: 15px 90px;
+    font-family: 'Miltonian Tattoo';
+    font-style: normal;
+    font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: right;
+}
+.button{
+width: 172px;
+text-align: center;
+left: 173px;
+top: 405px;
+border: 4px solid #f8edeb;
+padding: 15px 40px;
+color: #f8edeb;
+
+}
+
+h2{
+    font-size: 40px;
+    margin: 0;
+   }
+   .photo{
+    padding: 50px;
+    background-color:#1b263b;
+   }
+   .photo_inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+   }
+   .example {
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: 700px;
+    
+}
+.p_photo{
+font-family: 'Miltonian Tattoo';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 19px;
+text-align: center;
+color: #f8edeb;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.h_photo{
+float: left;
+margin: 4px 10px 2px 0px;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 40px;
+text-align: justify;
+color: #f8edeb;
+}
+.h_map{
+  font-family: 'Miltonian Tattoo';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+color: #f8edeb;
+margin-top: 0;
+padding-top: 10px;
+}
+.p_map{
+  font-family: 'Miltonian Tattoo';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 19px;
+text-align: center;
+color: #f8edeb;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+margin:15px;
+}
+.imap1{
+  width: 270px;
+  height: 200px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.imap2{
+  width: 170px;
+    height: 170px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imap3{
+  width: 170px;
+    height: 170px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  .h_imap{
+    font-family: 'Mali';
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 42px;
+color: #9D8189;
+text-align: center;
+  }
+  .p_imap{
+    font-family: 'Mali';
+font-style: italic;
+font-weight: 400;
+font-size: 20px;
+line-height: 42px;
+text-align: center;
+color: #f8edeb;;
+  }
+.poleznoe{
+  background-color:#D8E2DC ;
+}
+.ayato {
+  width: 250px;
+  height: auto;
+left: 85px;
+top: 440px;
+
+}
+.block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list{
+  padding: 50px;
+    background-color: #1b263b;
+    color: #f8edeb;
+}
+.list h3{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  text-decoration: none;
+  margin-right: 30px;
+}
+.p2{
+  font-family: 'Miltonian Tattoo';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+}
+.pp{
+  font-style: normal;
+font-weight: 400;
+font-size: 18px;
+}
+.logo2{
+  width: 100px;
+  
+  float: left;
+}
+
+@media (max-width:500px) {
+  .cont_banner {
+    display: flex;
+    flex-direction: column;
+  }
+  }
+/*телефоны горизонтально*/
+@media (min-width: 640px){
+  .ayato{
+    width: 400px;
+    height: 200px;
+  }
+}
+
+
+/*планшеты вертикально*/
+@media (min-width: 768px){
+  .logo {
+    width: 150px;
+    margin-left: 10px;
+}
+.titlebanner{
+  height: 66px;
+    font-family: 'Miltonian Tattoo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 43px;
+}
+.p_banner{
+  font-size:50px;
+}
+.ayato{
+  height: auto;
+  width: 500px;
+}
+.cont_banner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.button{
+  font-size: 25px;
+  color:#f8edeb;
+}
+.buttonn{
+  font-size: 25px;
+    margin-left: 250px;
+}
+.imap1{
+  margin-top: 20px;
+}
+.ssilki {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.h_photo{
+  font-size:40px;
+}
+.p_photo{
+  font-size: 30px;
+    line-height: 35px;
+}
+.h_map{
+  font-size:40px;
+}
+.p_map{
+  font-size: 30px;
+    line-height: 35px;
+}
+.h_imap{
+  font-size:25px;
+}
+.p_imap{
+  font-size: 25px;
+    
+}
+.imap1{
+  width: 400px;
+    height: auto;
+}
+.imap2{
+  width: 200px;
+    height: auto;
+    margin-top: 60px;
+}
+.imap3{
+  width: 200px;
+    height: auto;
+    margin-top: 60px;
+}
+.example{
+  width: 264px;
+    height: auto;
+    
+}
+.a2{
+  font-size: 20px;
+  color:#f8edeb;
+}
+.pp{
+  font-size: 23px;
+  color:#f8edeb;
+}
+.p2{
+  font-size: 23px;
+  color:#f8edeb;
+}
+
+.logo2 {
+  width: 130px;
+}
+.pay{
+  margin-left: 0;
+}
+.buttonr{
+  margin-left:280px;
+}
+
+}
+
+/*планшеты горизонтально*/
+@media (min-width: 990px){
+  header, nav{
+      width: 100%; /* шапка и навигация занимают всю ширину экрана */
+  }
+  .menu__btn{
+      display: none; /*  значок из трех полосок прячем и убираем из потока  */
+  }
+  .menu__box {
+      display: flex; /*  располагаем пункты меню горизонтально  */
+      justify-content: space-evenly; /*  располагаем пункты меню равномерно по ширине */
+      position: relative; /*  располагаем меню в потоке */
+      visibility: visible; /*  делаем его видимым */
+      top: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      padding: 10px;
+      list-style: none;
+      text-align: center;
+      background-color: transparent; /*  заливку меняем с серой на прозрачную */
+    }
+  li{ /*  настройки шрифта выбери самостоятельно */
+      font-family: PT Sans; 
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 31px;
+      margin: 0;
+  }
+
+  .menu__item:hover { /*  можно убрать изменение цвета или поменять его */
+      background-color: transparent;
+    }
+    .logo{
+      display: none;    
+    }
+    .menu__item {
+      display: block;
+      padding: 12px 24px;
+      color: #f8edeb;
+      text-decoration: none;
+      
+     }
+     .h_photo{
+      font-size: 40px;
+     }
+  .p_photo{
+    font-size: 35px;
+    line-height: 43px;
+    }
+    .example{
+      width: 264px;
+    margin-right: 1000px;
+    margin-bottom: 40px;
+    }
+    .h_map{
+      font-size: 40px;
+    }
+    .p_map{
+      font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+    }
+    .block{
+      display:inline-block;
+    }
+    .imap1 {
+      margin-left: 53px;
+      width: 383px;
+      height: 248px;
+    }
+    .cont_banner{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .ssilki{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .poleznoe_cont{
+      display: flex;
+      margin-top: 40px;
+    }
+    .buttonr{
+      margin-left: 450px;
+    }
+    .pay{
+      margin-left: 160px;
+    }
+
+}
+@media (min-width:1200px){
+  .ayato{
+    width: 700px;
+    height: 439px;
+    margin-bottom: 80px;
+    margin-left: 50px;
+  }
+  .pay{
+    margin-left: 160px;
+  }
+  .buttonn{
+    margin-left: 700px;
+  }
+  .button{
+    margin-right: 120px;
+  }
+  .titlebanner{
+    text-align: center;
+    margin-right: 400px;
+  }
+}
+.buttonn{
+  width: 172px;
+  text-align: center;
+  left: 173px;
+  top: 405px;
+  border: 4px solid #f8edeb;
+  padding: 15px 40px;
+  color:#f8edeb;
+  line-height: 80px;
+}
+.more{
+  margin: 15;
+  line-height: 29px;
+  height: 66px;
+  text-align: center;
+  background-color: #0d1b2a;
+  color:#f8edeb;
+  padding: 50px;
+    padding-bottom: 100px;
+}
+.money{
+  font-size: 34px;
+  text-align: center;
+}
+
+.mr{
+  height: 66px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 43px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.buttonr{
+  width: 172px;
+  text-align: center;
+  left: 173px;
+  top: 405px;
+  border: 4px solid #f8edeb;
+  padding: 15px 40px;
+  color:#f8edeb;
+  line-height: 80px;
+}
