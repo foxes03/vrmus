@@ -297,8 +297,11 @@ font-size: 18px;
     flex-direction: column;
   }
     .pay{
-    width: 350px;
+    width: 250px;
     height: 200px;
+  }
+    .titlebanner{
+    margin:0;
   }
   }
 /*телефоны горизонтально*/
