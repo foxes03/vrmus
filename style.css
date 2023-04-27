@@ -296,6 +296,10 @@ font-size: 18px;
     display: flex;
     flex-direction: column;
   }
+    .pay{
+    width: 350px;
+    height: 200px;
+  }
   }
 /*телефоны горизонтально*/
 @media (min-width: 640px){
